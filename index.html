@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Restaurantes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="assets/map-location-dot-solid.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <div class="todo">
+  <header class="container"> 
+    <h1 class="esp titulo" >Buscador de Restaurantes</h1>
+    <label class="esp sub"  for="ciudad">Selecciona una ciudad:</label>
+  </header>
+
+    
+  <section class="buscador" >
+    <select id="ciudad" class=" ciudad">
+      <option value="bogota">Bogotá</option>
+      <option value="medellin">Medellín</option>
+      <option value="cartagena">Cartagena</option>
+      <option value="newyork">New York</option>
+
+      
+    </select>
+
+    <a class="btn" onclick="buscarRestaurantes()"><img class="btnim" src="assets/magnifying-glass-solid.svg" alt="" width="auto"></a>
+
+    
+  </section>
+
+  <div id="resultados" class="resultado "></div>
+</div>
+
+  
+
+  <footer>
+    <h4>
+      © Copyright desarrollado y diseñado por <a href="">
+        Handru Camargo Productor Multimedia
+      </a>
+    </h4>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
