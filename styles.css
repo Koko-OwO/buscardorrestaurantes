@@ -3,27 +3,32 @@
   padding: 0;
   margin: 0;
 }
+/*se le da un modelo de cajas al documento, se resetean sus margenes y el padding*/
 
 body {
   text-align: center;
   background-image: url(assets/img/collage1.png);
   background-size:cover;
-  /* background-repeat: no-repeat; */
   background-position: center start;
   display: flex;
   flex-direction: column;
  color: white;
 }
 
+/*se da un alineamiento de texto a todo el documento, una imágen de fondo y el color del texto en general*/
+
 .todo {
   width: 100%;
   height: 90vh;
 }
+/*se le da tamaño a el contenedor general del documento*/
 
 @font-face {
   font-family: royal;
   src: url(assets/fonts/royal.ttf);
 }
+/*aquí se llama a la funte que contiene las carpetas de la página para su uso posterior al darle estilos en otras partes del documento*/
+
 .container {
   width: 100%;
   height: auto;
@@ -31,8 +36,9 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
 }
+/*se usa para darle estilos generales al header y que éste este centrado*/
+
 .titulo {
   font-family: royal;
   font-size: 10rem;
@@ -40,23 +46,26 @@ body {
  user-select: none;
  color: lemonchiffon;
 }
+/*se coloca la fuente del titulo, se da una sombra al texto, un tamaño al tituloy el color de fuente*/
 
 .titulo:hover {
   text-shadow: 2px 5px 5px #ff5500;
 }
+/*un hover para dar mas interactividad a la página*/
 
 .esp {
   margin-top: 2rem;
   margin-bottom: 2rem;
   
 }
+/*se le da margen en el top y el bottom a el titulo y subtitulo*/
 
 .sub {
   font-family: 'Rubik', sans-serif;
   font-size: 2rem;
   color: white;
-
 }
+/*se agrega tipografia a el subtitulo, un color y un tamaño a el texto*/
 
 .buscador {
   display: flex;
@@ -69,9 +78,10 @@ body {
   flex-direction: column;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  
-  
 }
+/*se dan margenes y tamaño a el buscador y el boton*/
+
+
 .resultado {
   display: flex;
   width: 100%;
@@ -82,12 +92,13 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  
 }
+/*se da el tamaño a la caja que contendrá el resultado despues de que se ejecute la funtion del js*/
 
 #ciudad {
   cursor: pointer;
 }
+/*para indicar que es clickeable el menu de escoger ciudad*/
 
 
 ul {
@@ -103,6 +114,7 @@ ul li {
   margin-bottom: 1rem;
   text-shadow: 2px 2px 2px black;
 }
+/*se le dan las propiedades a la respuesta que da el js para que quede alineado*/
 
 .ciudad {
   margin: 1rem;
@@ -120,6 +132,7 @@ ul li {
   background-color: rgb(226, 231, 196);
   transition: .5s;
 }
+/*se da tamaño a la barra del buscador*/
 
 .ciudad:hover{
   width: 20%;
@@ -128,16 +141,17 @@ ul li {
   
   height: 40px;
 }
+/*un hover para cambiar el radius del borde y el tamaño de la barra de busqueda o seleccón*/
 
 option {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
-  
- 
+  font-family: 'Rubik', sans-serif; 
 }
+/*se le da la la tipografía a las opciones*/
+
 
 .btn {
   margin: 1rem;
@@ -145,39 +159,40 @@ option {
   width: 3rem;
   cursor: pointer;
   transition: 1s;
-
 }
+/*se da el tamaño a el boton y el ponter para que sea visualmente mas atractivo*/
 
 .btn:hover {
  
     margin: 1rem;
     height: 3.5rem ;
     width: 3.5rem;
-    
-    /* box-shadow: 15px 5px 10px #48529944; */
     transition: .2s;
 
 }
+/*un hover para el tamaño del boton*/
 
 .btnim:hover {
 
   filter:drop-shadow(1px 8px 2px #888);
   transition: .2s;
 }
+/*un hover para agrega una sombra*/
 
 footer {
   width:100%;
   height: 10rem;
-
-  background-color: black;
+  /* background-color: black; */
   display: flex;
   align-items: center;
   justify-content: center;
- 
+  box-shadow: 0 0px 20px 5px  black;
 }
+/*se da tamaño al footer, una sombra y propiedades de flex*/
 
 a {
   text-decoration: none;
   color:#ccffcc;
 }
+/*se le quita la decoracion a el <a> y se le da un color al texto*/
 

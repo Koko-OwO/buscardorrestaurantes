@@ -6,48 +6,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buscador de Restaurantes</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="assets/map-location-dot-solid.svg">
+  <!--se agregan los estilos css-->
 
+  <link rel="shortcut icon" href="assets/map-location-dot-solid.svg">
+  <!--se agrega el icono de la pestaña-->
+
+  <!--adjunto fuente de google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-
+  <!--adjunto fuente de google font-->
 </head>
 <body>
  <div class="todo">
-  <header class="container"> 
-    <h1 class="esp titulo" >Buscador de Restaurantes</h1>
-    <label class="esp sub"  for="ciudad">Selecciona una ciudad:</label>
-  </header>
+  <!--contenedor para todo el documentos menos el footer-->
 
-    
-  <section class="buscador" >
-    <select id="ciudad" class=" ciudad">
-      <option value="bogota">Bogotá</option>
-      <option value="medellin">Medellín</option>
-      <option value="cartagena">Cartagena</option>
-      <option value="newyork">New York</option>
+    <header class="container"> 
+      <h1 class="esp titulo" >Buscador de Restaurantes</h1>
+      <label class="esp sub"  for="ciudad">Selecciona una ciudad:</label>
+    </header>
+    <!--en el header se encuentra el titulo y esl subtitulo-->
 
       
-    </select>
+    <section class="buscador" >
+      <select id="ciudad" class=" ciudad">
+        <option value="bogota">Bogotá</option>
+        <option value="medellin">Medellín</option>
+        <option value="cartagena">Cartagena</option>
+        <option value="newyork">New York</option>
+        <!--acá se pueden agregar mas option con el nombre de la ciudad, cuantas se necesiten-->
+        
+      </select>
 
-    <a class="btn" onclick="buscarRestaurantes()"><img class="btnim" src="assets/magnifying-glass-solid.svg" alt="" width="auto"></a>
+      <a class="btn" onclick="buscarRestaurantes()"><img class="btnim" src="assets/magnifying-glass-solid.svg" alt="" width="auto"></a>
+      <!--esta etiqueta <a> contiene la imagen que funciona como indicativo visual y tiene el comando para realizar la funcion del documento js-->
 
-    
-  </section>
+      
+    </section>
+    <!--en este section se agrega el selector de ciudades y el boton que ejecuta la funcion del documento js-->
 
-  <div id="resultados" class="resultado "></div>
-</div>
+    <div id="resultados" class="resultado "></div>
+      <!--este div sin contenido es el que se usara para mostrar el resultado de la funcion del documento js-->
+  </div>
 
   
 
   <footer>
     <h4>
-      © Copyright desarrollado y diseñado por <a href="">
+      © Copyright desarrollado y diseñado por 
+      <a href="#">
         Handru Camargo Productor Multimedia
       </a>
     </h4>
   </footer>
+  <!--el footer se usa para dejar la información de copyrigth-->
+
+
   <script src="script.js"></script>
+  <!--aquí se llama el documento script.js-->
 </body>
 </html>

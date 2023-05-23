@@ -16,12 +16,14 @@ const restaurantesPorCiudad = {
   ],
   
 };
+//se pone una constante con el valor al cual se va a acceder despues dependiendo de cual ciudad se nombre
 
-// Función para buscar y mostrar los restaurantes por ciudad
+
 function buscarRestaurantes() {
   const ciudad = document.getElementById("ciudad").value;
   const restaurantes = restaurantesPorCiudad[ciudad];
   const resultadosDiv = document.getElementById("resultados");
+// Función para buscar y mostrar los restaurantes por ciudad
 
   resultadosDiv.innerHTML = ""; 
   // Limpiar resultados anteriores
@@ -35,9 +37,11 @@ function buscarRestaurantes() {
       restauranteItem.textContent = `${restaurante.nombre} - ${restaurante.direccion}`;
       listaRestaurantes.appendChild(restauranteItem);
     }
+    //la estuctura con la que se agregara el resuldado de los restaurantes + el nombre
 
     resultadosDiv.appendChild(listaRestaurantes);
   } else {
     resultadosDiv.textContent = `No se encontraron restaurantes en esa ciudad.`;
   }
+  //lo que se mostrará en caso de que se use una ciudad en la que no se encuentran rstaurantes, al ser un documento de opsion esto no pasara pero es mejor tener un valor por defaul en caso de que por algún error en el código
 }
