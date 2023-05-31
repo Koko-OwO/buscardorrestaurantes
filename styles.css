@@ -44,7 +44,7 @@ body {
   font-size: 10rem;
   text-shadow: 2px 5px 5px #ffcc00;
  user-select: none;
- color: lemonchiffon;
+ color: rgb(122, 115, 51);
 }
 /*se coloca la fuente del titulo, se da una sombra al texto, un tamaño al tituloy el color de fuente*/
 
@@ -91,7 +91,7 @@ body {
   margin-top: 2rem;
   font-family: 'Rubik', sans-serif;
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 15rem;
 }
 /*se da el tamaño a la caja que contendrá el resultado despues de que se ejecute la funtion del js*/
 
@@ -107,6 +107,7 @@ ul {
   flex-direction: column;
   align-items: center;
   color: white;
+  margin-bottom: 15rem;
 }
 
 ul li {
@@ -187,8 +188,13 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0px 20px 5px  black;
+
+  margin-top: 15rem;
 }
 /*se da tamaño al footer, una sombra y propiedades de flex*/
+
+
+
 
 a {
   text-decoration: none;
